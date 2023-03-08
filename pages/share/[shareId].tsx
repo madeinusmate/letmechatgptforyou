@@ -174,10 +174,14 @@ const ChatGPT = () => {
           {bannerDisplayed && (
             <div className="text-center py-4 lg:px-4">
               <div
-                className="p-2 bg-emerald-800 items-center text-white leading-none lg:rounded-full flex lg:inline-flex"
+                className="p-2 bg-emerald-500 items-center text-white leading-none lg:rounded-full flex lg:inline-flex"
                 role="alert"
               >
-                <a href="https://chat.openai.com/" target={"_blank"}>
+                <a
+                  href="https://chat.openai.com/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <span className="font-semibold mr-2 text-left flex-auto">
                     😜 It wasn't that hard? Try ChatGPT now!
                   </span>
