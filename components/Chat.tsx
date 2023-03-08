@@ -98,7 +98,7 @@ export function Chat() {
         className="w-full ml-2 outline-none bg-transparent"
         type="text"
         placeholder="link"
-        value={`https://letmeChatGPTforyou.com/share/${shareId}`}
+        value={`https://www.letmechatgptforyou.com/share/${shareId}`}
       />
       <Button className="mx-4 flex-none" onClick={() => copyLinkToClipboard()}>
         Copy

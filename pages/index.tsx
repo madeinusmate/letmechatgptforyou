@@ -7,8 +7,42 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Let Me ChefGPT For You</title>
+        <title>Let Me ChatGPT For You</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no"
+        />
+        <meta name="next-head-count" content="3" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <meta
+          name="description"
+          content="Let Me ChatGPT For You is for all those people that find it more convenient to bother you with their questions than to ask ChatGPT for themselves. 😜"
+        />
+        <meta property="og:title" content="Let Me ChefGPT For You" />
+
+        <meta
+          property="og:description"
+          content="Let Me ChatGPT For You is for all those people that find it more convenient to bother you with their questions than to ask ChatGPT for themselves. 😜"
+        />
+        <meta property="og:url" content="https://www.letmechatgptforyou.com" />
       </Head>
       <div className="flex max-w-5xl mx-auto flex-col gap-12 items-center justify-center py-2 h-screen">
         <section className="flex flex-col gap-6 items-center text-center">
@@ -47,7 +81,5 @@ function Home() {
     </>
   );
 }
-
-Home.Layout = Layout;
 
 export default Home;
