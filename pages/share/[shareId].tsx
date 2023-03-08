@@ -55,15 +55,15 @@ const ChatGPT = () => {
   }, [shareId]);
 
   const InputMessage = () => (
-    <div className="w-full mt-6 flex clear-both ">
-      <div
+    <div className="mt-6 flex clear-both ">
+      <p
         aria-label="chat input"
-        className=" flex  rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-emerald-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm"
+        className="flex-auto rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-emerald-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm"
       >
         {!requestTyped && (
           <Typed strings={[firestoreDocument.userRequest]} typeSpeed={10} />
         )}
-      </div>
+      </p>
 
       <Button type="submit" className="ml-4 flex-none">
         <a href="https://chat.openai.com/">
