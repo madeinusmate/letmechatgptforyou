@@ -13,17 +13,7 @@ const chatGPTRequestsRef = collection(db, "ChatGPTRequests");
 export function Chat() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [cookie, setCookie] = useCookies([COOKIE_NAME]);
   const [shareId, setShareId] = useState<String>();
-
-  useEffect(() => {
-    if (!cookie[COOKIE_NAME]) {
-      // generate a semi random short id
-      const randomId = Math.random().toString(36).substring(7);
-      setCookie(COOKIE_NAME, randomId);
-    }
-    console.log(shareId);
-  }, [cookie, setCookie]);
 
   // Save ChatGPT Response to Firestore
   const saveToFirestore = async (request: string, response: string) => {

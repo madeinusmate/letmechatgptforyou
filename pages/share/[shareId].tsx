@@ -56,7 +56,7 @@ const ChatGPT = () => {
         className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm"
       >
         {!requestTyped && (
-          <Typed strings={[firestoreDocument.userRequest]} typeSpeed={40} />
+          <Typed strings={[firestoreDocument.userRequest]} typeSpeed={10} />
         )}
       </p>
 
@@ -123,11 +123,9 @@ const ChatGPT = () => {
               />
               <div>
                 <h2 className="text-md font-bold text-white">User</h2>
-                <Typed
-                  className="text-white text-md"
-                  strings={[firestoreDocument.userRequest]}
-                  typeSpeed={40}
-                />
+                <p className="text-white text-md">
+                  {firestoreDocument.userRequest}
+                </p>
               </div>
             </div>
           </div>
@@ -161,7 +159,7 @@ const ChatGPT = () => {
                 <Typed
                   className="text-white text-md"
                   strings={[firestoreDocument.agentResponse]}
-                  typeSpeed={40}
+                  typeSpeed={10}
                 />
               </div>
             </div>
