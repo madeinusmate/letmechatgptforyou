@@ -24,6 +24,7 @@ export function Chat() {
       });
 
       setShareId(docRef.id);
+      setLoading(false);
     } catch (error) {
       console.error("Error adding document: ", error);
     }
@@ -71,8 +72,7 @@ export function Chat() {
       lastMessage = lastMessage + chunkValue;
     }
 
-    const docRef = saveToFirestore(message, lastMessage);
-    setLoading(false);
+    saveToFirestore(message, lastMessage);
   };
 
   const copyLinkToClipboard = () => {
@@ -101,7 +101,7 @@ export function Chat() {
           rel="noreferrer"
         >
           <input
-            className="w-full ml-2 outline-none bg-transparent"
+            className="w-full ml-2 outline-none bg-transparent cursor-pointer"
             type="text"
             placeholder="link"
             value={`https://www.letmechatgptforyou.com/share/${shareId}`}
@@ -130,7 +130,8 @@ export function Chat() {
           sendMessage={sendMessage}
         />
       </div>
-      {loading && shareId ? <LoadingChatLine /> : <ShareLink />}
+      {loading && <LoadingChatLine />}
+      {shareId && <ShareLink />}
 
       <Toaster
         position="bottom-center"
