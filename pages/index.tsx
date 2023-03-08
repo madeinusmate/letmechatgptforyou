@@ -9,7 +9,6 @@ function Home() {
       <Head>
         <title>Let Me ChatGPT For You</title>
         <link rel="icon" href="/favicon.ico" />
-
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
