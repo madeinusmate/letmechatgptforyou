@@ -183,7 +183,7 @@ const ChatGPT = () => {
                   rel="noreferrer"
                 >
                   <span className="font-semibold mr-2 text-left flex-auto">
-                    😜 It wasn't that hard? Try ChatGPT now!
+                    {`😜 It wasn't that hard? Try ChatGPT now!`}
                   </span>
                 </a>
                 <svg
