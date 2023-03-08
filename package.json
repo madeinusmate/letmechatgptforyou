@@ -11,12 +11,22 @@
   "dependencies": {
     "@vercel/analytics": "^0.1.6",
     "@vercel/examples-ui": "^1.0.4",
+    "boring-avatars": "^1.7.0",
     "eventsource-parser": "^0.1.0",
+    "firebase": "^9.17.2",
+    "firebase-admin": "^11.5.0",
+    "fs": "^0.0.1-security",
+    "net": "^1.0.2",
     "next": "latest",
     "react": "latest",
     "react-cookie": "^4.1.1",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "latest",
-    "react-wrap-balancer": "^0.1.5"
+    "react-firebase-hooks": "^5.1.1",
+    "react-hot-toast": "^2.4.0",
+    "react-typed": "^1.2.0",
+    "react-wrap-balancer": "^0.1.5",
+    "tls": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^17",
