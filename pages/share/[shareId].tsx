@@ -118,7 +118,7 @@ const ChatGPT = () => {
           name="description"
           content="Let Me ChatGPT For You is for all those people that find it more convenient to bother you with their questions than to ask ChatGPT for themselves. 😜"
         />
-        <meta property="og:title" content="Let Me ChefGPT For You" />
+        <meta property="og:title" content="Let Me ChatGPT For You" />
 
         <meta
           property="og:description"
