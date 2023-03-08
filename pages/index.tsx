@@ -43,7 +43,7 @@ function Home() {
         />
         <meta property="og:url" content="https://www.letmechatgptforyou.com" />
       </Head>
-      <div className="flex max-w-5xl mx-auto flex-col gap-12 items-center justify-center py-2 h-screen">
+      <Page className="flex max-w-5xl mx-auto flex-col gap-12 items-center justify-center py-2 h-screen">
         <section className="flex flex-col gap-6 items-center text-center">
           <div
             className="relative h-16 w-16 p-1 mr-4 mb-2 text-white flex items-center justify-center rounded-full"
@@ -75,8 +75,8 @@ function Home() {
             <Chat />
           </div>
         </section>
-        <Footer />
-      </div>
+      </Page>
+      <Footer />
     </>
   );
 }
