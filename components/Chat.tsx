@@ -130,9 +130,7 @@ export function Chat() {
           sendMessage={sendMessage}
         />
       </div>
-      {loading && <LoadingChatLine />}
-
-      {shareId && <ShareLink />}
+      {loading && shareId ? <LoadingChatLine /> : <ShareLink />}
 
       <Toaster
         position="bottom-center"
