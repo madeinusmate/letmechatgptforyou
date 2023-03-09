@@ -69,6 +69,14 @@ function Home() {
             for themselves. 😜
           </Text>
         </section>
+        <section className="flex flex-col gap-2items-center text-center">
+          <p className="text-lg font-bold">How To Use It</p>
+          <ul className="list-decimal">
+            <li>1. Type a reqest to ask ChatGPT ⌨️</li>
+            <li>2. Copy the result link 💬</li>
+            <li>3. Send it to your boomer colleague/friend 🤣</li>
+          </ul>
+        </section>
 
         <section className="flex flex-col items-center">
           <div>

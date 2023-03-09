@@ -120,10 +120,6 @@ export function Chat() {
   return (
     <div>
       <div className="rounded-2xl border-zinc-100 flex flex-col items-center lg:border lg:p-6">
-        <span className="mx-auto flex flex-grow text-gray-600 clear-both">
-          Type a request to ask ChatGPT
-        </span>
-
         <InputMessage
           input={input}
           setInput={setInput}
@@ -143,7 +139,7 @@ export function Chat() {
 }
 
 const InputMessage = ({ input, setInput, sendMessage }: any) => (
-  <div className="mt-6 flex clear-both">
+  <div className=" flex clear-both">
     <input
       type="text"
       aria-label="chat input"
