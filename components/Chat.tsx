@@ -77,7 +77,7 @@ export function Chat() {
 
   const copyLinkToClipboard = () => {
     navigator.clipboard.writeText(
-      `https://letmeChatGPTforyou.com/share/${shareId}`
+      `https://letmechatgptforyou.vercel.app/share/${shareId}`
     );
     toast.success("Link Copied to Clipboard");
   };
@@ -96,7 +96,7 @@ export function Chat() {
           <path d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z"></path>
         </svg>
         <a
-          href={`https://www.letmechatgptforyou.com/share/${shareId}`}
+          href={`https://letmechatgptforyou.vercel.app/share/${shareId}`}
           target="_blank"
           rel="noreferrer"
         >
@@ -104,7 +104,7 @@ export function Chat() {
             className="w-full ml-2 outline-none bg-transparent cursor-pointer"
             type="text"
             placeholder="link"
-            value={`https://www.letmechatgptforyou.com/share/${shareId}`}
+            value={`https://letmechatgptforyou.vercel.app/share/${shareId}`}
           />
         </a>
         <Button
