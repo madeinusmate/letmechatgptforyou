@@ -101,7 +101,7 @@ export function Chat() {
           rel="noreferrer"
         >
           <input
-            className="w-full ml-2 outline-none bg-transparent cursor-pointer"
+            className="w-full ml-2 outline-none bg-transparent cursor-pointer text-white"
             type="text"
             placeholder="link"
             value={`https://letmechatgptforyou.vercel.app/share/${shareId}`}
