@@ -118,8 +118,8 @@ export function Chat() {
   );
 
   return (
-    <div>
-      <div className="rounded-2xl border-zinc-100 flex flex-col items-center lg:border lg:p-6">
+    <div className="w-full flex flex-col items-center">
+      <div className="w-full max-w-md lg:max-w-3xl xl:max-w-5xl rounded-2xl border-zinc-100 flex flex-col items-center lg:border lg:p-6">
         <InputMessage
           input={input}
           setInput={setInput}
@@ -139,12 +139,12 @@ export function Chat() {
 }
 
 const InputMessage = ({ input, setInput, sendMessage }: any) => (
-  <div className=" flex clear-both">
+  <div className="flex flex-row clear-both w-full">
     <input
       type="text"
       aria-label="chat input"
       required
-      className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm"
+      className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 sm:text-sm lg:text-base w-full"
       value={input}
       onKeyDown={(e) => {
         if (e.key === "Enter") {

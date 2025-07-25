@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <>
+    <div className="bg-zinc-700 min-h-screen w-full">
       <Head>
         <title>Let Me ChatGPT For You</title>
         <link rel="icon" href="/favicon.ico" />
@@ -41,9 +41,10 @@ function Home() {
           property="og:description"
           content="Let Me ChatGPT For You is for all those people that find it more convenient to bother you with their questions than to ask ChatGPT for themselves. 😜"
         />
-        <meta property="og:url" content="https://www.letmechatgptforyou.com" />
+        <meta property="og:url" content="https://letmechatgptforyou.vercel.app/" />
       </Head>
-      <Page className="flex max-w-5xl mx-auto flex-col gap-12 items-center justify-center py-2 h-screen">
+      
+      <div className="flex flex-col gap-12 items-center justify-center py-2 min-h-[90vh]">
         <section className="flex flex-col gap-6 items-center text-center">
           <div
             className="relative h-16 w-16 p-1 mr-4 mb-2 text-white flex items-center justify-center rounded-full"
@@ -62,16 +63,16 @@ function Home() {
               ></path>
             </svg>
           </div>
-          <Text variant="h1">Let Me ChatGPT For You</Text>
-          <Text className="text-zinc-600 text-center mx-5">
+          <Text variant="h1" className="text-white">Let Me ChatGPT For You</Text>
+          <Text className="text-white text-center mx-5">
             Let Me ChatGPT For You is for all those people that find it more
             convenient to bother you with their questions than to ask ChatGPT
             for themselves. 😜
           </Text>
         </section>
-        <section className="flex flex-col gap-2items-center text-center">
-          <p className="text-lg font-bold">How To Use It</p>
-          <ul className="list-decimal">
+        <section className="flex flex-col gap-2 items-center text-center">
+          <p className="text-lg font-bold text-white">How To Use It</p>
+          <ul className="list-decimal text-white">
             <li>1. Type a reqest to ask ChatGPT ⌨️</li>
             <li>2. Copy the result link 💬</li>
             <li>3. Send it to your boomer colleague/friend 🤣</li>
@@ -83,9 +84,10 @@ function Home() {
             <Chat />
           </div>
         </section>
-      </Page>
+      </div>
+      
       <Footer />
-    </>
+    </div>
   );
 }
 

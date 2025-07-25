@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className=" text-center h-16 sm:h-20 w-full sm:pt-2 pt-4 border-t mt-5 flex sm:flex-row flex-col justify-between items-center px-3 space-y-3 sm:mb-0 mb-3">
+    <footer className="bg-zinc-700 text-white text-center w-full sm:pt-2 pt-4 border-t border-zinc-600 mt-5 flex sm:flex-row flex-col justify-between items-center px-3 space-y-3 sm:mb-0 mb-3">
       <div>
         Powered by{" "}
         <a
           href="https://openai.com/"
           target="_blank"
           rel="noreferrer"
-          className="font-bold hover:underline transition underline-offset-2"
+          className="font-bold hover:underline transition underline-offset-2 text-white"
         >
           OpenAI{" "}
         </a>
@@ -18,7 +18,7 @@ export default function Footer() {
           href="https://vercel.com/"
           target="_blank"
           rel="noreferrer"
-          className="font-bold hover:underline transition underline-offset-2"
+          className="font-bold hover:underline transition underline-offset-2 text-white"
         >
           Vercel.
         </a>
@@ -30,7 +30,7 @@ export default function Footer() {
           href="https://twitter.com/madeinusmate"
           target="_blank"
           rel="noreferrer"
-          className="font-bold hover:underline transition underline-offset-2"
+          className="font-bold hover:underline transition underline-offset-2 text-white"
         >
           {" "}
           @madeinusmate.
